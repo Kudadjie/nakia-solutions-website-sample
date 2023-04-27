@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import TypewriterComponent from "typewriter-effect";
+import HeroImage from "../../assets/Hero - Mobile.webp";
 import "./Hero.scss";
 const HeroSection = styled.span`
+  position: fixed;
   font-family: "Bitter", serif;
   font-size: 1.25rem;
   padding: 10px;
@@ -10,6 +12,7 @@ const HeroSection = styled.span`
   justify-content: center;
   align-items: center;
   width: fit-content;
+  z-index: 10;
 `;
 
 const ContactUsBtn = styled.button`
@@ -20,6 +23,11 @@ const ContactUsBtn = styled.button`
 const Hero: React.FC = () => {
   return (
     <div>
+      <img
+        src={HeroImage}
+        alt="Hero Image Nakia Solutions"
+        style={{ position: "absolute" }}
+      />
       <HeroSection>
         <span>
           We exceed expectations every time in delivering top-notch
