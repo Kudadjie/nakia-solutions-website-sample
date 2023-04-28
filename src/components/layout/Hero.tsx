@@ -4,21 +4,35 @@ import TypewriterComponent from "typewriter-effect";
 import HeroImage from "../../assets/Hero - Mobile.webp";
 import "./Hero.scss";
 const HeroSection = styled.span`
-  position: fixed;
   font-family: "Bitter", serif;
-  font-size: 1.25rem;
+  color: white;
+  font-size: 1.2rem;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: fit-content;
-  z-index: 10;
+  height: 200px;
+  position: absolute;
+  top: 276px;
+  backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgb(16 19 24 / 75%);
+
+  & span {
+    text-align: center;
+  }
+
+  & button {
+    margin-top: 20px;
+    padding: 10px 50px;
+  }
 `;
 
 const ContactUsBtn = styled.button`
   color: white;
   padding: 10px;
   margin: 10px;
+  margin: 0 auto;
 `;
 const Hero: React.FC = () => {
   return (
@@ -26,7 +40,7 @@ const Hero: React.FC = () => {
       <img
         src={HeroImage}
         alt="Hero Image Nakia Solutions"
-        style={{ position: "absolute" }}
+        style={{ width: "100vw" }}
       />
       <HeroSection>
         <span>
@@ -50,10 +64,9 @@ const Hero: React.FC = () => {
                 .start();
             }}
           />
-          to keep your facilities running smoothly
         </span>
+        <ContactUsBtn>Contact Us</ContactUsBtn>
       </HeroSection>
-      <ContactUsBtn>Contact Us</ContactUsBtn>
     </div>
   );
 };
