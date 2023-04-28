@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+const LargeInfo = styled.p``;
 const servicesInfo =
   "At Nakia, we offer a comprehensive range of products and services that cater to diverse needs, encompassing Building and Maintenance Supplies, Janitorial Supplies, Cleaning Supplies, and Medical Courier Services. We are committed to fostering successful customer engagement and delivering exceptional experiences by cultivating robust client relationships, surpassing lifecycle requirements, and upholding our core values to the highest standards.";
 
@@ -55,6 +56,11 @@ const NAICSection = styled.section`
 const Services: React.FC = () => {
   return (
     <ServicesSection>
+      <LargeInfo>
+        We provide quality services to the National Institute of Health research
+        community, federal agencies, and state and local municipalities with
+        high standards for efficiency and customer service.
+      </LargeInfo>
       <h2>What we Offer</h2>
       <p>{servicesInfo}</p>
       {/* Services with images */}
