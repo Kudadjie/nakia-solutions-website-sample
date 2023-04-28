@@ -7,8 +7,10 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #252525;
+  position: absolute;
   width: 100vw;
+  backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgb(16 19 24 / 75%);
   height: auto;
 
   //Tablet

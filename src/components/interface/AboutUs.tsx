@@ -24,13 +24,15 @@ const AboutUsDetails = styled.section`
 `;
 
 const Certifications = styled.div`
-  padding: 20px;
-  margin: 20px;
   & div {
     display: flex;
+
+    justify-content: center;
     margin-bottom: 20px;
+    margin-top: 50px;
     img {
-      width: 170px;
+      width: 90px;
+      padding: 0 5px;
     }
   }
 `;
@@ -39,6 +41,7 @@ const Customers = styled.div`
   h2 {
     margin: 0 auto;
     width: fit-content;
+    color: #79a4cd;
   }
   & div {
     display: flex;
@@ -82,8 +85,7 @@ const AboutUs: React.FC = () => {
         <div>
           <img src={acdbe} alt="ACDBE certification"></img>
           <img src={dbe} alt="DBE certification"></img>
-        </div>
-        <div>
+
           <img src={mbe} alt="MBE certification"></img>
           <img src={sbe} alt="SBE certification"></img>
         </div>

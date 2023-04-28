@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import TypewriterComponent from "typewriter-effect";
-import HeroImage from "../../assets/Hero - Mobile.webp";
+// import HeroImage1 from "../../assets/hero-images/1.webp";
+// import HeroImage2 from "../../assets/hero-images/2.webp";
+import HeroImage3 from "../../assets/hero-images/3.webp";
+// import HeroImage4 from "../../assets/hero-images/4.webp";
+// import HeroImage5 from "../../assets/hero-images/5.webp";
 import "./Hero.scss";
 const HeroSection = styled.span`
-  font-family: "Bitter", serif;
-  color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -14,10 +16,8 @@ const HeroSection = styled.span`
   align-items: center;
   width: fit-content;
   height: 200px;
-  position: absolute;
+
   top: 276px;
-  backdrop-filter: blur(3px) saturate(180%);
-  background-color: rgb(16 19 24 / 75%);
 
   & span {
     text-align: center;
@@ -28,13 +28,14 @@ const HeroSection = styled.span`
     width: fit-content;
     margin-top: 20px;
     padding: 10px 20px;
+    background-color: #2984ca;
   }
 `;
 const Hero: React.FC = () => {
   return (
     <div>
       <img
-        src={HeroImage}
+        src={HeroImage3}
         alt="Hero Image Nakia Solutions"
         style={{ width: "100vw" }}
       />
