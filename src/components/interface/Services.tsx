@@ -4,6 +4,10 @@ import GalleryGrid from "./GalleryGrid";
 
 const LargeInfo = styled.p`
   font-weight: 100;
+  background-color: #1b3450;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 `;
 const servicesInfo =
   "At Nakia, we offer a comprehensive range of products and services that cater to diverse needs, encompassing Building and Maintenance Supplies, Janitorial Supplies, Cleaning Supplies, and Medical Courier Services. We are committed to fostering successful customer engagement and delivering exceptional experiences by cultivating robust client relationships, surpassing lifecycle requirements, and upholding our core values to the highest standards.";
@@ -18,6 +22,8 @@ const ServicesSection = styled.section`
   }
   & h2 {
     text-align: center;
+    color: #1b3450;
+    margin-top: 40px;
   }
 
   & p {
@@ -47,6 +53,7 @@ const NAICSection = styled.section`
     background-color: rgb(235, 235, 235);
     text-align: center;
     font-size: 20px;
+    color: #1b3450;
   }
 
   td {
@@ -61,11 +68,10 @@ const Services: React.FC = () => {
       <GalleryGrid />
       <LargeInfo>
         <i>
-          {" "}
-          We provide quality services to the National Institute of Health
+          " We provide quality services to the National Institute of Health
           research community, federal agencies, and state and local
           municipalities with high standards for efficiency and customer
-          service.
+          service."
         </i>
       </LargeInfo>
 

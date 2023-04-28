@@ -20,6 +20,8 @@ const AboutUsDetails = styled.section`
   }
   & h2 {
     text-align: center;
+    color: #1b3450;
+    margin-bottom: 20px;
   }
 `;
 
@@ -40,6 +42,7 @@ const Certifications = styled.div`
 const Customers = styled.div`
   h2 {
     margin: 0 auto;
+
     width: fit-content;
     color: #79a4cd;
   }
@@ -48,12 +51,20 @@ const Customers = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
     img {
       margin: 10px;
     }
   }
+
+  & p {
+    position: relative;
+    left: 200px;
+    width: fit-content;
+  }
 `;
+
 const AboutUs: React.FC = () => {
   return (
     <>
@@ -75,7 +86,10 @@ const AboutUs: React.FC = () => {
       </AboutUsDetails>
 
       <Customers>
-        <h2>Trusted Clients</h2>
+        <h2>"Outstanding Service"</h2>
+        <p>
+          <i>- our clients</i>
+        </p>
         <div>
           <img src={jonhnsonControls} alt="Johnson Controls" width="200" />
           <img className="NIH" src={NIH} alt="NIH" width="300" />

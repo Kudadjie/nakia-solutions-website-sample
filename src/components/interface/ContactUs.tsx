@@ -5,6 +5,7 @@ import styled from "styled-components";
 const ContactUsSection = styled.section`
   padding: 10px;
   margin: 10px;
+  background-color: #8fbfec;
 `;
 const ContactInfo = styled.div`
   padding: 10px;
@@ -23,15 +24,16 @@ const ContactInfo = styled.div`
   }
 
   & p {
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
 `;
-const ContactForm = styled.form``;
 const ContactUs: React.FC = () => {
   return (
     <ContactUsSection>
       <ContactInfo>
-        <h3>Interested in working with Nakia?</h3>
+        <h3>
+          <a id="contact-us"></a>Interested in working with Nakia?
+        </h3>
         <p>We will be glad to hear from you!</p>
         <em>
           <p>Nakia Solutions Inc</p>
@@ -51,7 +53,6 @@ const ContactUs: React.FC = () => {
           <i className="fa-brands fa-facebook-f"></i>
         </div>
       </ContactInfo>
-      <ContactForm></ContactForm>
     </ContactUsSection>
   );
 };
