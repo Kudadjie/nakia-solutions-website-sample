@@ -8,8 +8,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   :root {
-	/* font-family: "Bitter", serif;
-	font-family: "Open Sans", sans-serif; */
+
+	font-family: 'Poppins', sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
   }
