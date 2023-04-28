@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import TypewriterComponent from "typewriter-effect";
-// import HeroImage1 from "../../assets/hero-images/1.webp";
-// import HeroImage2 from "../../assets/hero-images/2.webp";
-// import HeroImage4 from "../../assets/hero-images/4.webp";
-// import HeroImage5 from "../../assets/hero-images/5.webp";
+import HeroImage1 from "../../assets/hero-images/1.webp";
+import HeroImage2 from "../../assets/hero-images/2.webp";
+import HeroImage4 from "../../assets/hero-images/4.webp";
+import HeroImage5 from "../../assets/hero-images/5.webp";
 import HeroImage3 from "../../assets/hero-images/3.webp";
 
 import "./Hero.scss";
@@ -17,7 +17,7 @@ const HeroSection = styled.span`
   align-items: center;
   width: fit-content;
   height: 200px;
-  background-color: #c0d0df;
+
   top: 276px;
 
   & span {
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
   return (
     <div>
       <img
-        src={HeroImage3}
+        src={HeroImage2}
         alt="Hero Image Nakia Solutions"
         style={{ width: "100vw" }}
       />
