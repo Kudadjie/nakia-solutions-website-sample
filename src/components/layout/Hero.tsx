@@ -11,6 +11,7 @@ const HeroSection = styled.span`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: fit-content;
   height: 200px;
   position: absolute;
@@ -23,16 +24,11 @@ const HeroSection = styled.span`
   }
 
   & button {
+    color: white;
+    width: fit-content;
     margin-top: 20px;
-    padding: 10px 50px;
+    padding: 10px 20px;
   }
-`;
-
-const ContactUsBtn = styled.button`
-  color: white;
-  padding: 10px;
-  margin: 10px;
-  margin: 0 auto;
 `;
 const Hero: React.FC = () => {
   return (
@@ -65,7 +61,7 @@ const Hero: React.FC = () => {
             }}
           />
         </span>
-        <ContactUsBtn>Contact Us</ContactUsBtn>
+        <button>Contact Us</button>
       </HeroSection>
     </div>
   );
