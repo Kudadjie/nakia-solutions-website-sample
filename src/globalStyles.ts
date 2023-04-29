@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
 	text-decoration: inherit;
   }
   a:hover {
-	/*TODO confirm usage */
 	color: #535bf2;
   }
   
