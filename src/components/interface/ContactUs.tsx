@@ -1,7 +1,7 @@
 import React from "react";
-import { Props } from "../types";
 import styled from "styled-components";
 
+//styled components
 const ContactUsSection = styled.section`
   padding: 10px;
   margin: 10px;
@@ -27,6 +27,8 @@ const ContactInfo = styled.div`
     margin: 10px 0;
   }
 `;
+
+//react component
 const ContactUs: React.FC = () => {
   return (
     <ContactUsSection>
@@ -58,11 +60,3 @@ const ContactUs: React.FC = () => {
 };
 
 export default ContactUs;
-
-// Nakia Solutions Inc
-// Fatmata Jalloh, CEO
-// Phone: 301 335 9538
-// HQ:
-// 706 Hammond Branch Rd
-// Odenton, MD 21113
-// Email: Nakiasolutions@gmail.com  LinkedIn: Fatmata Jalloh
