@@ -15,17 +15,16 @@ const ServicesSection = styled.section`
   padding: 10px;
   margin: 10px;
 
-  & {
-    text-align: center;
-    text-align: justify;
-  }
-  & h2 {
+  text-align: center;
+  text-align: justify;
+
+  h2 {
     text-align: center;
     color: #1b3450;
     margin-top: 40px;
   }
 
-  & p {
+  p {
     padding: 10px;
     margin: 10px;
   }

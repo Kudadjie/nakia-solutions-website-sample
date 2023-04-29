@@ -1,5 +1,4 @@
 import React from "react";
-import { Props } from "../types";
 import styled from "styled-components";
 
 const FooterSection = styled.footer`

@@ -15,17 +15,17 @@ import NIH from "../../assets/NIH-Logo.webp";
 const AboutUsDetails = styled.section`
   padding: 20px;
   margin: 20px;
-  & {
-    text-align: justify;
-  }
-  & h2 {
+
+  text-align: justify;
+
+  h2 {
     text-align: center;
     color: #1b3450;
     margin-bottom: 20px;
   }
 `;
 const Certifications = styled.div`
-  & div {
+  div {
     display: flex;
 
     justify-content: center;
@@ -44,7 +44,7 @@ const Customers = styled.div`
     width: fit-content;
     color: #79a4cd;
   }
-  & div {
+  div {
     display: flex;
     flex-direction: column;
     justify-content: center;

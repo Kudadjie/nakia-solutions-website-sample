@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import TypewriterComponent from "typewriter-effect";
-// import HeroImage1 from "../../assets/hero-images/1.webp";
-// import HeroImage2 from "../../assets/hero-images/2.webp";
-// import HeroImageDesktop from "../../assets/hero-images/Hero - DesktopTablet (1600 × 500 px).svg";
-// import HeroImage4 from "../../assets/hero-images/4.webp";
-// import HeroImage5 from "../../assets/hero-images/5.webp";
 import HeroImage3 from "../../assets/hero-images/3.webp";
 
 //styled components
@@ -25,12 +20,12 @@ const HeroSection = styled.span`
 
   top: 276px;
 
-  & span {
+  span {
     text-align: center;
     padding: 10px;
   }
 
-  & a {
+  a {
     color: white;
     width: fit-content;
     margin-top: 20px;
@@ -39,7 +34,7 @@ const HeroSection = styled.span`
     border-radius: 10px;
   }
 
-  & a:visited {
+  a:visited {
     color: white;
   }
 `;

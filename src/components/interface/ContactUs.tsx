@@ -14,16 +14,16 @@ const ContactInfo = styled.div`
   h3 {
     color: #1f68aa;
   }
-  & a {
+  a {
     color: #252525;
     text-decoration: underline;
   }
 
-  & i {
+  i {
     margin: 10px;
   }
 
-  & p {
+  p {
     margin: 10px 0;
   }
 `;
