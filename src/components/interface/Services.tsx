@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import GalleryGrid from "./GalleryGrid";
+import GridGallery from "./GridGallery";
 
+//styled components
 const LargeInfo = styled.p`
   font-weight: 100;
   background-color: #1b3450;
@@ -9,8 +10,6 @@ const LargeInfo = styled.p`
   text-align: center;
   margin-bottom: 20px;
 `;
-const servicesInfo =
-  "At Nakia, we offer a comprehensive range of products and services that cater to diverse needs, encompassing Building and Maintenance Supplies, Janitorial Supplies, Cleaning Supplies, and Medical Courier Services. We are committed to fostering successful customer engagement and delivering exceptional experiences by cultivating robust client relationships, surpassing lifecycle requirements, and upholding our core values to the highest standards.";
 
 const ServicesSection = styled.section`
   padding: 10px;
@@ -61,11 +60,12 @@ const NAICSection = styled.section`
     font-weight: bold;
   }
 `;
+
+//react component
 const Services: React.FC = () => {
   return (
     <ServicesSection>
-      {/* Services with images */}
-      <GalleryGrid />
+      <GridGallery />
       <LargeInfo>
         <i>
           " We provide quality services to the National Institute of Health
@@ -76,7 +76,15 @@ const Services: React.FC = () => {
       </LargeInfo>
 
       <h2>What we Offer</h2>
-      <p>{servicesInfo}</p>
+      <p>
+        At Nakia, we offer a comprehensive range of products and services that
+        cater to diverse needs, encompassing Building and Maintenance Supplies,
+        Janitorial Supplies, Cleaning Supplies, and Medical Courier Services. We
+        are committed to fostering successful customer engagement and delivering
+        exceptional experiences by cultivating robust client relationships,
+        surpassing lifecycle requirements, and upholding our core values to the
+        highest standards.
+      </p>
       <NAICSection>
         <table>
           <thead>
