@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 //certification
 import acdbe from "../../assets/acdbe cert.webp";
 import dbe from "../../assets/dbe cert.webp";
@@ -10,8 +11,7 @@ import sbe from "../../assets/sbe cert.webp";
 import jonhnsonControls from "../../assets/johnson-controls.webp";
 import NIH from "../../assets/NIH-Logo.webp";
 
-import { Props } from "../types";
-
+//styled components
 const AboutUsDetails = styled.section`
   padding: 20px;
   margin: 20px;
@@ -24,7 +24,6 @@ const AboutUsDetails = styled.section`
     margin-bottom: 20px;
   }
 `;
-
 const Certifications = styled.div`
   & div {
     display: flex;
@@ -38,7 +37,6 @@ const Certifications = styled.div`
     }
   }
 `;
-
 const Customers = styled.div`
   h2 {
     margin: 0 auto;
@@ -57,14 +55,14 @@ const Customers = styled.div`
       margin: 10px;
     }
   }
-
-  & p {
-    position: relative;
-    left: 200px;
-    width: fit-content;
-  }
 `;
 
+const CustomerRemark = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+//react component
 const AboutUs: React.FC = () => {
   return (
     <>
@@ -86,10 +84,13 @@ const AboutUs: React.FC = () => {
       </AboutUsDetails>
 
       <Customers>
-        <h2>"Outstanding Service"</h2>
-        <p>
-          <i>- our clients</i>
-        </p>
+        <CustomerRemark>
+          <h2>"Outstanding Service"</h2>
+          <p>
+            <i>- our clients</i>
+          </p>
+        </CustomerRemark>
+
         <div>
           <img src={jonhnsonControls} alt="Johnson Controls" width="200" />
           <img className="NIH" src={NIH} alt="NIH" width="300" />
