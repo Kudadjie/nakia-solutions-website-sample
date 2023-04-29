@@ -1,4 +1,3 @@
-import "./App.css";
 import AboutUs from "./components/interface/AboutUs";
 import ContactUs from "./components/interface/ContactUs";
 import Services from "./components/interface/Services";
