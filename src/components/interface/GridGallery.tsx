@@ -53,8 +53,11 @@ const LookingForMoreText = styled.p`
   text-decoration: underline;
 `;
 
+interface GridGalleryProps {
+  contactHandler: React.Dispatch<React.SetStateAction<boolean>>;
+}
 //react component
-const GridGallery: React.FC = () => {
+const GridGallery: React.FC<GridGalleryProps> = ({ contactHandler }) => {
   return (
     <>
       <GridGalleryStyled>
@@ -72,11 +75,11 @@ const GridGallery: React.FC = () => {
         </div>
         <div>
           <Image src={galleryImage4} alt="" />
-          <p>Box Filter</p>
+          <p>Box Filters</p>
         </div>
         <div>
           <Image src={galleryImage5} alt="" />
-          <p>Ball Valve</p>
+          <p>Ball Valves</p>
         </div>
         <div>
           <Image src={galleryImage6} alt="" />
@@ -96,7 +99,7 @@ const GridGallery: React.FC = () => {
         </div>
         <div>
           <Image src={galleryImage10} alt="" />
-          <p>Pulley</p>
+          <p>Pulleys</p>
         </div>
         <div>
           <Image src={galleryImage11} alt="" />
@@ -116,11 +119,11 @@ const GridGallery: React.FC = () => {
         </div>
         <div>
           <Image src={galleryImage15} alt="" />
-          <p>Caption</p>
+          <p>Power Drills</p>
         </div>
         <div>
           <Image src={galleryImage16} alt="" />
-          <p>Caption</p>
+          <p>Glass Wipers</p>
         </div>
         <div>
           <Image src={galleryImage17} alt="" />
@@ -156,7 +159,7 @@ const GridGallery: React.FC = () => {
         </div>
       </GridGalleryStyled>
       <LookingForMoreText>
-        <a>Looking for something else?</a>
+        <a onClick={() => contactHandler(true)}>Looking for something else?</a>
       </LookingForMoreText>
     </>
   );
