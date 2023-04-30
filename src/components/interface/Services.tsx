@@ -21,7 +21,7 @@ const ServicesSection = styled.section`
   h2 {
     text-align: center;
     color: #1b3450;
-    margin-top: 40px;
+    margin: 40px 0;
   }
 
   p {
@@ -60,11 +60,15 @@ const NAICSection = styled.section`
   }
 `;
 
+interface ServicesProps {
+  contactHandler: React.Dispatch<React.SetStateAction<boolean>>;
+}
 //react component
-const Services: React.FC = () => {
+const Services: React.FC<ServicesProps> = ({ contactHandler }) => {
   return (
     <ServicesSection>
-      <GridGallery />
+      <h2>Popular Products</h2>
+      <GridGallery contactHandler={contactHandler} />
       <LargeInfo>
         <i>
           " We provide quality services to the National Institute of Health
