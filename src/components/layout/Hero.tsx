@@ -1,28 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import TypewriterComponent from "typewriter-effect";
-import HeroImage3 from "../../assets/hero-images/3.webp";
+import HeroImage from "../../assets/hero-images/hero-image.webp";
 
 //styled components
 import "./Hero.scss";
 const HeroSection = styled.span`
+  position: absolute;
+  top: 126px;
   font-size: 1rem;
-  padding: 10px;
+  padding: 28px 15px 30px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  height: 200px;
-  background-color: aliceblue;
-  margin-bottom: 50px;
+  width: 100vw;
   padding-bottom: 30px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgb(16 19 24 / 75%);
+  z-index: 5;
 
-  top: 276px;
-
-  span {
-    text-align: center;
-    padding: 10px;
+  :first-child {
+    padding: 0px 20px;
   }
 
   a {
@@ -38,13 +39,15 @@ const HeroSection = styled.span`
     color: white;
   }
 `;
-
+interface HeroProps {
+  contactHandler: React.Dispatch<React.SetStateAction<boolean>>;
+}
 //react component
-const Hero: React.FC = () => {
+const Hero: React.FC<HeroProps> = ({ contactHandler }) => {
   return (
     <div>
       <img
-        src={HeroImage3}
+        src={HeroImage}
         alt="Hero Image Nakia Solutions"
         style={{ width: "100vw" }}
       />
@@ -55,24 +58,24 @@ const Hero: React.FC = () => {
             options={{ loop: true }}
             onInit={(writer) => {
               writer
-                .typeString("Building and Maintenance Supply Services")
+                .typeString("Building and Maintenance Supply Services.")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("Janitorial Supply Services")
+                .typeString("Janitorial Supply Services.")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("Cleaning Supply Services")
+                .typeString("Cleaning Supply Services.")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("Medical Courier Services")
+                .typeString("Medical Courier Services.")
                 .pauseFor(1000)
                 .deleteAll()
                 .start();
             }}
           />
         </span>
-        <a rel="noopener" href="#contact-us">
-          Contact Us
+        <a rel="noopener" onClick={() => contactHandler(true)}>
+          Request
         </a>
       </HeroSection>
     </div>
