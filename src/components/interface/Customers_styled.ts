@@ -7,6 +7,7 @@ export const Section = styled.section`
   margin-top: 25px;
   align-items: center;
   gap: 40px;
+
   @media screen and (min-width: 426px) and (max-width: 1200px) {
     flex-direction: row;
     justify-content: space-around;

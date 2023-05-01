@@ -18,7 +18,7 @@ const TrustedBy: React.FC = () => {
         <Customer3 className="NIH" src={NIH} alt="NIH" />
       </SectionTrustedBy>
       <RatedOutstanding>
-        We are rated <b style={{ color: "gold" }}>"Out-standing"</b> by our
+        We are rated <b style={{ color: "gold" }}>"Outstanding"</b> by our
         trusted clients!
       </RatedOutstanding>
     </>

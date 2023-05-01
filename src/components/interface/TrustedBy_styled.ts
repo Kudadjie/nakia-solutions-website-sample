@@ -18,9 +18,9 @@ export const SectionTrustedBy = styled(Section)`
 
 export const Customer1 = styled.img`
   width: 100px;
+
   //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-  }
+
   //Desktop
   @media screen and (min-width: 1200px) {
     width: 200px;
@@ -28,9 +28,9 @@ export const Customer1 = styled.img`
 `;
 export const Customer2 = styled.img`
   width: 240px;
+
   //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-  }
+
   //Desktop
   @media screen and (min-width: 1200px) {
     width: 300px;
@@ -46,8 +46,7 @@ export const RatedOutstanding = styled.p`
   margin-top: 50px;
 
   //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-  }
+
   //Desktop
   @media screen and (min-width: 1200px) {
     font-size: x-large;

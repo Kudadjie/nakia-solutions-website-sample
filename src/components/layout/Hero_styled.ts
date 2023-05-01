@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackdropImageHero from "../../assets/hero-images/Hero-Desktop.webp";
+import BackdropImageHero from "../../assets/hero-images/Hero.webp";
 
 export const HeroBackdrop = styled.div`
   background-image: url(${BackdropImageHero});

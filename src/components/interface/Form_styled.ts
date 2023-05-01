@@ -7,8 +7,7 @@ export const FormContainer = styled.div`
   padding: 20px 30px;
 
   //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-  }
+
   //Desktop
   @media screen and (min-width: 1200px) {
     width: 50vw;

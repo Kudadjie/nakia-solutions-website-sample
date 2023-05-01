@@ -1,5 +1,4 @@
 import { useState } from "react";
-import AboutUs from "./components/interface/Customers";
 import ContactUs from "./components/interface/ContactUs";
 import Form from "./components/interface/Form";
 import Modal from "./components/layout/Modal";

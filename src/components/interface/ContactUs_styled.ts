@@ -19,12 +19,6 @@ export const ContactUsSection = styled.section`
   padding: 10px;
   margin: 10px;
   background-color: transparent;
-  //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-  }
-  //Desktop
-  @media screen and (min-width: 1200px) {
-  }
 `;
 export const ContactInfo = styled.div`
   padding: 10px;

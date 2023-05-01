@@ -13,8 +13,6 @@ export const ServicesContainer = styled.div`
     flex-direction: row;
   }
   //Desktop
-  @media screen and (min-width: 1200px) {
-  }
 `;
 
 export const TextSection = styled.section`
@@ -55,8 +53,7 @@ export const LargeInfo = styled.p`
   padding: 20px;
 
   //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-  }
+
   //Desktop
   @media screen and (min-width: 1200px) {
     font-size: x-large;
