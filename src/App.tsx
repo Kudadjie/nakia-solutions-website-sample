@@ -1,13 +1,13 @@
 import { useState } from "react";
-import AboutUs from "./components/interface/AboutUs";
+import AboutUs from "./components/interface/Customers";
 import ContactUs from "./components/interface/ContactUs";
 import Form from "./components/interface/Form";
-import Services from "./components/interface/Services";
 import Modal from "./components/layout/Modal";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Hero from "./components/layout/Hero";
 import GlobalStyle from "./globalStyles";
+import Services_AboutUs from "./components/interface/Services&AboutUs";
 
 //TODO - PopUp Modal, Desktop and Tablet Design, Final Testing, Deployment
 function App() {
@@ -31,7 +31,7 @@ function App() {
       <Header />
       <main>
         <Hero contactHandler={contactHandler} />
-        <Services contactHandler={contactHandler} />
+        <Services_AboutUs contactHandler={contactHandler} />
         <AboutUs />
         <ContactUs />
       </main>
