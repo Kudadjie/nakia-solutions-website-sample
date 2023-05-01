@@ -1,16 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import { FooterSection } from "./Footer_styled";
 
-const FooterSection = styled.footer`
-  background-color: #252525;
-  padding: 10px;
-  color: #cacaca;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  grid-row-gap: 5px;
-`;
 const Footer: React.FC = () => {
   return (
     <FooterSection>

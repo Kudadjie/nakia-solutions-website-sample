@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import galleryImage1 from "../../assets/gallery/gallery-item-1.webp";
 import galleryImage2 from "../../assets/gallery/gallery-item-2.webp";
 import galleryImage3 from "../../assets/gallery/gallery-item-3.webp";
@@ -24,34 +23,11 @@ import galleryImage22 from "../../assets/gallery/gallery-item-22.webp";
 import galleryImage23 from "../../assets/gallery/gallery-item-23.webp";
 import galleryImage24 from "../../assets/gallery/gallery-item-24.webp";
 import galleryImage25 from "../../assets/gallery/gallery-item-25.webp";
-
-//styled components
-const GridGalleryStyled = styled.div`
-  display: grid;
-  grid: auto-flow / 40vw 40vw;
-  width: fit-content;
-  grid-column-gap: 41px;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-      text-align: center;
-    }
-  }
-`;
-
-const Image = styled.img`
-  width: 160px;
-  height: 160px;
-`;
-
-const LookingForMoreText = styled.p`
-  text-align: center;
-  text-decoration: underline;
-`;
+import {
+  GridGalleryStyled,
+  LookingForMoreText,
+  Image,
+} from "./GridGallery_styled";
 
 interface GridGalleryProps {
   contactHandler: React.Dispatch<React.SetStateAction<boolean>>;
