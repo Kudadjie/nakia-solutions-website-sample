@@ -36,7 +36,6 @@ const Services_AboutUs: React.FC<Services_AboutUsProps> = ({
         <TextSection>
           <h2>What we Offer</h2>
           <WhatWeOfferImageFrame>
-            <p>Test</p>
             <img
               src={WhatWeOfferImageTablet_Desktop}
               alt="What we offer - Nakia Solutions"
