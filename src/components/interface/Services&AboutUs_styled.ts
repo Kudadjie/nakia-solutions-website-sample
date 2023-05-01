@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import AboutUsBackdropImage from "./../../assets/about-us-images/About-us.webp";
 
 //styled components
 export const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  margin: 10px;
 
   //Tablet
   @media screen and (min-width: 426px) and (max-width: 1200px) {
@@ -24,7 +27,6 @@ export const ServicesSection = styled.section`
   margin: 10px;
 
   text-align: center;
-  text-align: justify;
 
   h2 {
     text-align: center;
@@ -36,16 +38,53 @@ export const ServicesSection = styled.section`
     padding: 10px;
     margin: 10px;
   }
+
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LargeInfo = styled.p`
-  font-weight: 100;
+  font-weight: 400;
   background-color: #1b3450;
   color: white;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 20px;
+
+  //Tablet
+  @media screen and (min-width: 426px) and (max-width: 1200px) {
+  }
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    font-size: x-large;
+    padding: 20px 100px;
+  }
 `;
 
+export const AboutUsBackdrop = styled.div`
+  background-image: url(${AboutUsBackdropImage});
+  background-size: cover;
+  height: 795px;
+
+  div {
+    backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgb(16 19 24 / 75%);
+    height: 100%;
+    color: white;
+  }
+
+  //Tablet
+  @media screen and (min-width: 426px) and (max-width: 1200px) {
+    height: 100%;
+  }
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    height: 400px;
+  }
+`;
 export const WhatWeOfferImageFrame = styled.div`
   img {
     width: 100%;
@@ -54,8 +93,8 @@ export const WhatWeOfferImageFrame = styled.div`
 `;
 
 export const NAICSection = styled.section`
-  margin: 10px;
   padding: 10px;
+  width: 360px;
 
   table {
     border-collapse: collapse;
@@ -81,14 +120,25 @@ export const NAICSection = styled.section`
     text-align: center;
     font-weight: bold;
   }
+
+  //Tablet
+  @media screen and (min-width: 426px) and (max-width: 1200px) {
+    width: 360px;
+    margin: 10px;
+  }
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    margin: 10px;
+  }
 `;
 
 export const AboutUsDetails = styled.section`
   text-align: justify;
+  padding: 50px;
 
   h2 {
-    text-align: center;
-    color: #1b3450;
+    text-align: inherit;
     margin-bottom: 20px;
   }
 
@@ -96,10 +146,10 @@ export const AboutUsDetails = styled.section`
   @media screen and (min-width: 426px) and (max-width: 1200px) {
     h2 {
       text-align: initial;
-      margin-left: 6%;
     }
   }
   //Desktop
   @media screen and (min-width: 1200px) {
+    padding: 100px 130px;
   }
 `;

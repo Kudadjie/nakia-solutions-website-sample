@@ -31,8 +31,8 @@ function App() {
       <Header />
       <main>
         <Hero contactHandler={contactHandler} />
+
         <Services_AboutUs contactHandler={contactHandler} />
-        <AboutUs />
         <ContactUs />
       </main>
       <Footer />

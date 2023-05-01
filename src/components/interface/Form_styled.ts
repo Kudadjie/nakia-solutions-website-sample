@@ -5,6 +5,14 @@ export const FormContainer = styled.div`
   background-color: white;
   opacity: 1;
   padding: 20px 30px;
+
+  //Tablet
+  @media screen and (min-width: 426px) and (max-width: 1200px) {
+  }
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    width: 50vw;
+  }
 `;
 
 export const RequestForm = styled.form`
@@ -56,4 +64,9 @@ export const CloseFormBtn = styled.p`
   justify-content: flex-end;
   color: #5aa6bf;
   margin-top: 20px;
+  cursor: pointer;
+
+  :hover {
+    color: red;
+  }
 `;
