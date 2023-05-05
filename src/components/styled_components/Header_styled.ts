@@ -9,6 +9,8 @@ export const HeaderContainer = styled.header`
   width: 100vw;
 
   img {
+    width: 150px;
+    height: 100px;
     position: relative;
     bottom: 25px;
     z-index: 1000;
@@ -25,8 +27,8 @@ export const HeaderContainer = styled.header`
     justify-content: flex-start;
     padding-bottom: 0px;
     img {
-      width: 141px;
-      height: 50px;
+      width: 310px;
+      height: 105px;
       margin: 30px 0 0 20px;
     }
   }

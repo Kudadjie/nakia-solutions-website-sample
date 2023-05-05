@@ -1,25 +1,7 @@
 import styled from "styled-components";
-import AboutUsBackdropImage from "./../../assets/about-us-images/About-us.webp";
+import AboutUsBackdropImage from "./../../assets/about-us-images/About-us.png";
 
 //styled components
-export const ServicesContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
-
-  //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-    flex-direction: row;
-  }
-  //Desktop
-`;
-
-export const TextSection = styled.section`
-  display: inherit;
-  flex-direction: column;
-  align-items: center;
-`;
 export const ServicesSection = styled.section`
   padding: 10px;
   margin: 10px;
@@ -37,12 +19,63 @@ export const ServicesSection = styled.section`
     margin: 10px;
   }
 
+  //Tablet
+
   //Desktop
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+`;
+
+export const Images = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const ImageOverlayHorizontal = styled.div`
+  img {
+    width: 50vw;
+    height: 100%;
+  }
+
+  //Tablet
+  @media screen and (min-width: 426px) and (max-width: 1200px) {
+    img {
+    }
+  }
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    img {
+      width: 640px;
+    }
+  }
+`;
+
+export const ImageOverlayVertical = styled.div`
+  img {
+    width: 47vw;
+    height: 100%;
+  }
+
+  //Tablet
+  @media screen and (min-width: 426px) and (max-width: 1200px) {
+  }
+  img {
+    width: 47vw;
+  }
+  //Desktop
+  @media screen and (min-width: 1200px) {
+    img {
+      width: 50vw;
+    }
+  }
+`;
+export const TextSection = styled.section`
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const LargeInfo = styled.p`
@@ -64,7 +97,7 @@ export const LargeInfo = styled.p`
 export const AboutUsBackdrop = styled.div`
   background-image: url(${AboutUsBackdropImage});
   background-size: cover;
-  height: 795px;
+  height: 1100px;
 
   div {
     backdrop-filter: blur(3px) saturate(180%);
@@ -79,54 +112,13 @@ export const AboutUsBackdrop = styled.div`
   }
   //Desktop
   @media screen and (min-width: 1200px) {
-    height: 400px;
+    height: 460px;
   }
 `;
 export const WhatWeOfferImageFrame = styled.div`
   img {
     width: 100%;
     height: 300px;
-  }
-`;
-
-export const NAICSection = styled.section`
-  padding: 10px;
-  width: 360px;
-
-  table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-  }
-
-  td,
-  th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 10px 20px;
-  }
-
-  th {
-    background-color: rgb(235, 235, 235);
-    text-align: center;
-    font-size: 20px;
-    color: #1b3450;
-  }
-
-  td {
-    text-align: center;
-    font-weight: bold;
-  }
-
-  //Tablet
-  @media screen and (min-width: 426px) and (max-width: 1200px) {
-    width: 360px;
-    margin: 10px;
-  }
-  //Desktop
-  @media screen and (min-width: 1200px) {
-    width: 400px;
-    margin: 10px;
   }
 `;
 
@@ -148,5 +140,19 @@ export const AboutUsDetails = styled.section`
   //Desktop
   @media screen and (min-width: 1200px) {
     padding: 100px 130px;
+  }
+`;
+
+export const DownloadErrorMessage = styled.span`
+  width: fit-content;
+  background-color: white;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 3px solid red;
+  color: black;
+
+  i {
+    padding: 10px;
   }
 `;

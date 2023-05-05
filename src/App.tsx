@@ -6,37 +6,36 @@ import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Hero from "./components/layout/Hero";
 import GlobalStyle from "./globalStyles";
-import Services_AboutUs from "./components/interface/Services&AboutUs";
+import Services_AboutUs from "./components/interface/Services_AboutUs";
 
-//TODO - PopUp Modal, Desktop and Tablet Design, Final Testing, Deployment
-function App() {
+const App = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   function contactHandler() {
     setIsModalOpen(true);
   }
 
-  function closeModal() {
-    setIsModalOpen(false);
-  }
   return (
     <>
       <GlobalStyle />
       {isModalOpen && (
         <Modal>
-          <Form closeBtnHandler={closeModal} />
+          <Form
+            closeBtnHandler={() => {
+              setIsModalOpen(false);
+            }}
+          />
         </Modal>
       )}
       <Header />
       <main>
         <Hero contactHandler={contactHandler} />
-
         <Services_AboutUs contactHandler={contactHandler} />
         <ContactUs />
       </main>
       <Footer />
     </>
   );
-}
+};
 
 export default App;

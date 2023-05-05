@@ -1,8 +1,10 @@
 import React from "react";
-import { Props } from "../types";
-import { Backdrop } from "./Modal_styled";
+import { Backdrop } from "../styled_components/Modal_styled";
+interface ModalProps {
+  children: React.ReactNode;
+}
 
-const Modal: React.FC<Props> = ({ children }) => {
+const Modal: React.FC<ModalProps> = ({ children }) => {
   return <Backdrop>{children}</Backdrop>;
 };
 

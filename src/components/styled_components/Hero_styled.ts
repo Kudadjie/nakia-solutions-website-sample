@@ -1,8 +1,20 @@
 import styled from "styled-components";
-import BackdropImageHero from "../../assets/hero-images/Hero.webp";
+import Hero1 from "../../assets/hero-images/1.png";
+import Hero2 from "../../assets/hero-images/2.png";
+import Hero3 from "../../assets/hero-images/3.png";
+import Hero4 from "../../assets/hero-images/4.png";
+import Hero5 from "../../assets/hero-images/5.png";
+import Hero6 from "../../assets/hero-images/6.png";
+
+const randomPool = [Hero1, Hero2, Hero3, Hero4, Hero5, Hero6];
+
+function randomIntFromInterval(min: number, max: number) {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 export const HeroBackdrop = styled.div`
-  background-image: url(${BackdropImageHero});
+  background-image: url(${randomPool[randomIntFromInterval(0, 5)]});
   height: 800px;
   display: flex;
   background-size: cover;
