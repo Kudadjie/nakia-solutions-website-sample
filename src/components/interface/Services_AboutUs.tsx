@@ -72,9 +72,8 @@ const Services_AboutUs: React.FC<Services_AboutUsProps> = ({
         </Images>
       </div>
       <LargeInfo>
-        We provide quality services to the National Institute of Health research
-        community, federal agencies, and state and local municipalities with
-        high standards for efficiency and customer service.
+        We provide quality services to federal agencies, and state and local
+        municipalities with high standards for efficiency and customer service.
       </LargeInfo>
       <AboutUsBackdrop>
         <div>
