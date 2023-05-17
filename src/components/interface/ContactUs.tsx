@@ -1,6 +1,10 @@
 import React from "react";
-import { ContactUsSection, ContactInfo, Container } from "./ContactUs_styled";
-import { NAICSection } from "./Services&AboutUs_styled";
+import {
+  ContactUsSection,
+  ContactInfo,
+  Container,
+  NAICSection,
+} from "../styled_components/ContactUs_styled";
 
 //react component
 const ContactUs: React.FC = () => {
@@ -52,7 +56,7 @@ const ContactUs: React.FC = () => {
       <ContactUsSection>
         <ContactInfo>
           <h3>
-            <a id="contact-us"></a>Interested in working with Nakia?
+            <a></a>Interested in working with Nakia?
           </h3>
           <p>We will be glad to hear from you!</p>
           <em>
@@ -67,10 +71,8 @@ const ContactUs: React.FC = () => {
           <i className="fa-solid fa-envelope-open-text"></i>
           <a href="mailto:nakiasolutions@gmail.com">nakiasolutions@gmail.com</a>
           <div>
+            {/* TODO - USE LINKEDIN PROFILE URL */}
             <i className="fa-brands fa-linkedin-in"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-facebook-f"></i>
           </div>
         </ContactInfo>
       </ContactUsSection>

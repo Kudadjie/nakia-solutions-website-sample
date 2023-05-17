@@ -1,10 +1,13 @@
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
-
-//styled components
 import "./Hero.scss";
-import { HeroContainer, HeroSection, HeroBackdrop } from "./Hero_styled";
-import TrustedBy from "../interface/TrustedBy";
+//scss file necessary for styling typewriter-effect component
+import {
+  HeroContainer,
+  HeroSection,
+  HeroBackdrop,
+} from "../styled_components/Hero_styled";
+import CertificationSection from "../interface/Certification";
 
 interface HeroProps {
   contactHandler: React.Dispatch<React.SetStateAction<boolean>>;
@@ -56,8 +59,7 @@ const Hero: React.FC<HeroProps> = ({ contactHandler }) => {
           </a>
         </HeroSection>
       </HeroBackdrop>
-
-      <TrustedBy />
+      <CertificationSection />
     </HeroContainer>
   );
 };
